@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh-Hant" data-document-version="1.3.0">
+<html lang="zh-Hant" data-document-version="1.4.0">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="document-version" content="1.3.0">
+  <meta name="document-version" content="1.4.0">
   <meta name="document-updated" content="2026-07-21">
-  <title>CO8 網站內容整理報告｜v1.3.0</title>
+  <title>CO8 網站內容整理報告｜v1.4.0</title>
   <style>
     :root{--ink:#172033;--muted:#5f6878;--line:#dfe4ec;--brand:#5d48e8;--soft:#f5f3ff;--card:#fff;--warn:#fff8e8}*{box-sizing:border-box}body{margin:0;background:#f4f6fa;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;line-height:1.75}.wrap{max-width:980px;margin:0 auto;padding:48px 24px 72px}.hero{padding:52px 48px;border-radius:24px;color:#fff;background:linear-gradient(135deg,#171a2d,#5d48e8);box-shadow:0 20px 60px #29265726}.eyebrow{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;opacity:.8}.hero h1{font-size:clamp(2rem,5vw,3.7rem);line-height:1.12;margin:.4rem 0 1rem}.hero p{max-width:720px;font-size:1.1rem;margin:0;opacity:.92}.meta{margin-top:22px;font-size:.9rem;opacity:.72}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0}.card,section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}.card strong{display:block;font-size:1.55rem;color:var(--brand)}section{margin-top:20px}h2{font-size:1.45rem;margin:0 0 14px}h3{font-size:1.08rem;margin:22px 0 6px}p{margin:8px 0}ul,ol{padding-left:1.25rem;margin:10px 0}li{margin:7px 0}.loop{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;counter-reset:item}.loop div{padding:14px 10px;border-radius:12px;background:var(--soft);text-align:center;font-weight:650}.loop div:before{counter-increment:item;content:counter(item,decimal-leading-zero);display:block;color:var(--brand);font-size:.78rem}.tag{display:inline-block;margin:3px 5px 3px 0;padding:4px 10px;border-radius:999px;background:var(--soft);color:#4432b7;font-size:.86rem}.case{border-left:3px solid var(--brand);padding-left:18px;margin:20px 0}.note{background:var(--warn);border-color:#f0dfaa}.deck-title{margin-top:54px;padding:38px;border-radius:22px;background:#171a2d;color:#fff}.slide{min-height:480px;margin-top:22px;padding:42px 46px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 35px #25294412;display:flex;flex-direction:column;justify-content:center}.slide .n{color:var(--brand);font-weight:750;letter-spacing:.12em}.slide h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.18;margin:8px 0 20px}.slide .lead{font-size:1.25rem;color:#313a4c}.quote{font-size:1.18rem;padding:18px 22px;border-left:4px solid var(--brand);background:var(--soft)}details{margin-top:20px;color:var(--muted)}summary{cursor:pointer;font-weight:700;color:var(--brand)}.speech-controls{display:flex;gap:8px;margin:12px 0}.speech-btn{appearance:none;border:1px solid #cfc8ff;border-radius:999px;background:var(--soft);color:#4432b7;padding:7px 13px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}.speech-btn:hover{background:#eae6ff}.speech-btn.stop{background:#fff;color:var(--muted);border-color:var(--line)}.speech-status{font-size:.84rem;color:var(--muted);align-self:center}.footer{color:var(--muted);font-size:.88rem;margin-top:26px;padding:0 4px}.footer a{color:var(--brand)}@media print{body{background:#fff}.slide{break-before:page;min-height:90vh;box-shadow:none}.deck-title{break-before:page}.speech-controls{display:none}}@media(max-width:680px){.wrap{padding:24px 14px 48px}.hero{padding:36px 24px}.grid{grid-template-columns:1fr}.loop{grid-template-columns:repeat(2,1fr)}section,.slide{padding:22px}.slide{min-height:auto}}
   </style>
@@ -18,6 +18,16 @@
     .version-badge{display:inline-block;margin-top:18px;padding:5px 11px;border:1px solid #ffffff55;border-radius:999px;font-size:.82rem;font-weight:750;letter-spacing:.06em;background:#ffffff18}
     .revision-list{font-size:.92rem;color:var(--muted)}
   </style>
+
+  <style>
+    .product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}
+    .product-card{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}
+    .product-card img{display:block;width:100%;height:auto;background:#f6f7fb}
+    .product-card-body{padding:18px}
+    .product-card h3{margin:0 0 6px}.product-card p{font-size:.95rem;color:var(--muted)}
+    .product-meta{font-size:.86rem;color:var(--muted);margin-top:8px}.product-shot-list{font-size:.9rem;color:var(--muted)}
+    @media(max-width:760px){.product-grid{grid-template-columns:1fr}.product-card-body{padding:16px}}
+  </style>
 </head>
 <body><main class="wrap">
   <header class="hero">
@@ -25,7 +35,7 @@
     <h1>CO8 網站內容整理報告</h1>
     <p>CO8 將自己定位為專為 D2C 品牌打造的 AI 創意操作系統，核心訴求是透過大量、快速且品牌一致的靜態廣告創意，解除成效行銷中的「創意產能瓶頸」。</p>
     <div class="meta">資料來源：CO8「關於」頁面（繁體中文）｜整理日期：2026 年 7 月 20 日</div>
-    <div class="version-badge">文件版號 v1.3.0｜更新：2026-07-21</div>
+    <div class="version-badge">文件版號 v1.4.0｜更新：2026-07-21</div>
   </header>
 
   <div class="grid">
@@ -250,6 +260,38 @@
     <p class="revision-list">日期說明：目前先依你的第一手資訊，以「自 2001 年起」記錄產品經理資歷。WinCE E550 各系統與線上 POP 編輯器的精確年份、產品名稱、用戶數或商業成果，待找到履歷、舊合約、畫面或新聞資料後再逐項補強，不臆測數字。</p>
   </section>
 
+
+  <section><h2>十一之一、早期產品實績畫面補充</h2>
+    <p class="quote"><b>用途：</b>這批畫面用來補強「自 2001 年起即有產品經理與產品落地經驗」的可視化證據。面試時不需要逐張展示；若 Gary 想看具體作品，可挑 2–3 類說明你曾處理過行動裝置 UI、資料管理、內容閱讀、商業流程與遊戲化互動。</p>
+    <p>講法重點不是「畫面很新」，而是：在早期 Windows Mobile／Pocket PC 與 Web 環境限制下，已經能把需求整理成可操作的產品流程，並兼顧資料輸入、同步、權限、內容呈現與使用者互動。</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <a href="assets/products/sheets/mobile-schedule.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/products/sheets/mobile-schedule.jpg" alt="Mobile Schedule 行動排程產品畫面總覽"></a>
+        <div class="product-card-body"><h3>Mobile Schedule｜行動排程／提醒系統</h3><p>展示月曆、週檢視、日程編輯、重複規則、提醒、搜尋與分類等 PDA 時代的行動資訊管理流程。</p><p class="product-meta">可講能力：行動 UI、排程資料模型、重複事件規則、提醒流程、使用者輸入限制下的互動設計。</p></div>
+      </div>
+      <div class="product-card">
+        <a href="assets/products/sheets/ebook.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/products/sheets/ebook.jpg" alt="eBook 閱讀器產品畫面總覽"></a>
+        <div class="product-card-body"><h3>eBook｜行動電子書／文字閱讀器</h3><p>展示文字閱讀、字型、顏色、格式設定、選單操作與檔案列表，屬於早期行動內容產品。</p><p class="product-meta">可講能力：內容呈現、閱讀體驗、格式與設定、低解析度裝置上的可讀性取捨。</p></div>
+      </div>
+      <div class="product-card">
+        <a href="assets/products/sheets/erp.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/products/sheets/erp.jpg" alt="ERP 行動商務系統畫面總覽"></a>
+        <div class="product-card-body"><h3>ERP｜行動商務／資料管理系統</h3><p>展示登入、主選單、商品與客戶資料、訂單、庫存、數量、金額與同步狀態等企業流程。</p><p class="product-meta">可講能力：企業資料流程、行動表單、CRUD、離線／同步概念、商務系統落地。</p></div>
+      </div>
+      <div class="product-card">
+        <a href="assets/products/sheets/rich.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/products/sheets/rich.jpg" alt="Rich 遊戲化學習／互動產品畫面總覽"></a>
+        <div class="product-card-body"><h3>Rich｜遊戲化互動產品</h3><p>展示角色選擇、地圖、任務、題目、股市／消費情境與即時回饋等互動流程。</p><p class="product-meta">可講能力：遊戲化設計、任務流程、狀態管理、教育／金融情境互動、視覺化回饋。</p></div>
+      </div>
+      <div class="product-card">
+        <a href="assets/products/sheets/nycsport.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/products/sheets/nycsport.jpg" alt="nycsport 行政作業自動化流程圖"></a>
+        <div class="product-card-body"><h3>nycsport｜行政作業自動化流程</h3><p>展示多人彙編、批次資料轉換與資料回傳的流程圖，適合用來說明資料處理與作業自動化經驗。</p><p class="product-meta">可講能力：批次流程、資料彙整、作業自動化、跨角色資料交付。</p></div>
+      </div>
+    </div>
+    <ul class="product-shot-list">
+      <li>完整截圖已放在 `assets/products/`，主頁先用 contact sheet 快速展示，不讓面試教材變得太長。</li>
+      <li>若被問到自有公司與作品關係，仍維持 v1.3.0 的定位：這些是過往產品與接案經驗證據，本次面試是 full-time 正職求職。</li>
+    </ul>
+  </section>
+
   <section><h2>十二、為什麼對方仍擔心？不是能力 gap，而是 ownership 證據 gap</h2>
     <p>你的公開作品已經充分證明技術能力：24 年工程經驗、多租戶 SaaS、高併發與金流、身份認證、AI Gateway、多模型路由、Agentic Workflow、Cloud Run、CI/CD，以及多套生產系統。對方真正想確認的，不是「做不做得出來」，而是「是否願意並能夠長期經營同一個產品」。</p>
 
@@ -422,6 +464,7 @@
 
   <section><h2>文件修訂紀錄</h2>
     <ul class="revision-list">
+      <li><b>v1.4.0｜2026-07-21：</b>加入 product.zip 內的早期產品實績畫面，整理為 Mobile Schedule、eBook、ERP、Rich 與 nycsport 五組 contact sheet，補強 2001 年起產品經理／行動產品／企業資料流程與遊戲化互動經驗的可視化證據。</li>
       <li><b>v1.3.0｜2026-07-21：</b>整合 Novia 最新提醒：Gary 具技術背景，可分享 AI 技術深度；新增 signsight／nanograd／edgekit 三個公開作品的呈現話術，並補充自有公司仍營運時的 full-time 求職定位與避免誤踩顧問／合作提案的界線。</li>
       <li><b>v1.2.0｜2026-07-20：</b>新增 25 年產品 ownership 時間線；加入 2001 年起的 WinCE E550 多媒體系統產品經理經歷、東岸互動線上 POP 編輯器主導經歷，並將面試定位由「轉型」改為「讓既有 ownership 被看見」。</li>
       <li><b>v1.1.2｜2026-07-20：</b>精確記錄 STA 角色為「協助方資訊組負責人，並主導整個網站規劃、建置與演進」；加入協會、訓練及網站公開時間線。</li>
@@ -432,7 +475,7 @@
     <p class="revision-list">版號規則：文字修正或小幅補充增加 patch（v1.0.x）；新增完整章節或教材增加 minor（v1.x.0）；文件定位或結構全面改版增加 major（vx.0.0）。</p>
   </section>
 
-  <div class="footer">文件版號 <b>v1.3.0</b>｜最後更新：2026-07-21<br>本報告與面試簡報依據 <a href="https://co8.ai/zh-Hant/about">CO8 關於頁面</a>、<a href="https://co8.ai/en">CO8 英文首頁</a>及 <a href="https://app.co8.ai/login">CO8 Beta 登入頁</a>公開內容整理。涉及案例數字與產品效果的敘述均屬網站自述，未經獨立驗證。</div>
+  <div class="footer">文件版號 <b>v1.4.0</b>｜最後更新：2026-07-21<br>本報告與面試簡報依據 <a href="https://co8.ai/zh-Hant/about">CO8 關於頁面</a>、<a href="https://co8.ai/en">CO8 英文首頁</a>及 <a href="https://app.co8.ai/login">CO8 Beta 登入頁</a>公開內容整理。涉及案例數字與產品效果的敘述均屬網站自述，未經獨立驗證。</div>
 </main>
 <script>
   (() => {

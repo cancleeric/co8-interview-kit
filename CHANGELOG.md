@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0] - 2026-07-21
+
+- 加入 `product.zip` 內的早期產品實績畫面
+- 整理為 Mobile Schedule、eBook、ERP、Rich、nycsport 五組 contact sheet
+- 補強 2001 年起產品經理、行動產品、企業資料流程、內容閱讀與遊戲化互動經驗的可視化證據
+- 主頁保留簡潔展示，完整截圖放在 `assets/products/`
+
 ## [1.3.0] - 2026-07-21
 
 - 整合 Novia 最新提醒：Gary 具技術背景，可分享 AI 技術深度
