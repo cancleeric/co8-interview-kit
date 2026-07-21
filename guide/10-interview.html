@@ -1,0 +1,100 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>十、面試情報與應對策略｜CO8 面試教材</title><link rel="stylesheet" href="site.css"></head><body><div class="layout"><aside class="side"><h1><a href="index.html">CO8 面試教材網站</a></h1><p>Chapter 10</p><div class="toolbar"><a class="btn" href="index.html">章節首頁</a><a class="btn" href="../">快讀</a></div><nav class="nav"><a class="" href="01-brand.html">1. 一、品牌定位與命名</a>
+<a class="" href="02-use-cases.html">2. 二、產品作用與使用情境</a>
+<a class="" href="03-loop.html">3. 三、無限創意循環</a>
+<a class="" href="04-differentiation.html">4. 四、核心理念與差異化主張</a>
+<a class="" href="05-cases.html">5. 五、網站列舉的實戰案例</a>
+<a class="" href="06-team.html">6. 六、創辦團隊與顧問</a>
+<a class="" href="07-assessment.html">7. 七、整體評估</a>
+<a class="" href="08-conclusion.html">8. 八、結論</a>
+<a class="" href="09-ai-ops.html">9. 九、如果題目交到我們手上：從 AI 生圖走向創意營運系統</a>
+<a class="active" href="10-interview.html">10. 十、面試情報與應對策略</a>
+<a class="" href="11-ownership.html">11. 十一、25 年產品 ownership 時間線</a>
+<a class="" href="12-mobile-products.html">12. 十一之一、早期產品實績畫面補充</a>
+<a class="" href="13-gap.html">13. 十二、為什麼對方仍擔心？不是能力 gap，而是 ownership 證據 gap</a>
+<a class="" href="14-english-practice.html">14. 英文逐句學習｜一句英文、一句中文</a>
+<a class="" href="15-revisions.html">15. 文件修訂紀錄</a></nav></aside><main class="main"><div class="hero"><h2>十、面試情報與應對策略</h2><div class="toolbar"><a class="btn" href="index.html">← 回章節首頁</a><a class="btn" href="../full.html">原長版</a></div></div><div class="content"><section class="note"><h2>十、面試情報與應對策略</h2>
+    <p><b>情報來源：</b>Novia（2026-07-20 對話整理）。以下為面試準備線索，其中「取得美國 funding」及「提供股份」尚未獨立查證，面試時應以提問方式確認，不當成既定事實。</p>
+
+    <h3>面試官與溝通方式</h3>
+    <ul>
+      <li>面試官叫 <b>Gary</b>，香港人，面試主要使用中文。</li>
+      <li>溝通風格相對開放，可能會主動介紹產品目前的樣子、計畫與問題。</li>
+      <li>加分關鍵不是背標準答案，而是能有條理地與他共同拆解問題、提出假設並討論取捨。</li>
+    </ul>
+
+    <h3>職位與核心考題</h3>
+    <p>職位偏向自家 SaaS 產品的 <b>Software Architect</b>。產品是面向 B2B 公司客戶、使用 AI 產生廣告內容的平台。Gary 可能會問：</p>
+    <ol>
+      <li>你過去有哪些 SaaS 與 AI 經驗？你從中學到什麼？</li>
+      <li>如果加入並負責平台架構，你會從哪裡開始？</li>
+      <li>產品規模擴大、用戶增加後，可能出現哪些問題？</li>
+      <li>如何維持穩定性、隔離不同企業客戶、控制 AI 成本並持續交付？</li>
+      <li>在需求不明確時，你如何主動判斷市場需要什麼？</li>
+    </ol>
+
+    <h3>回答架構題時的建議順序</h3>
+    <ol>
+      <li><b>先問清楚：</b>客戶輪廓、流量、生成任務類型、SLA、資料敏感度、目前最大痛點與預期成長。</li>
+      <li><b>再畫核心流程：</b>企業帳號與權限 → brief／素材輸入 → AI job queue → 模型與供應商路由 → 審核 → 產出儲存 → 發布 → 指標與學習。</li>
+      <li><b>說明擴展策略：</b>多租戶隔離、非同步工作佇列、限流與配額、冪等與重試、模型 fallback、快取、可觀測性與成本護欄。</li>
+      <li><b>列出故障情境：</b>模型逾時或限流、重複生成、任務卡住、資料跨租戶、提示詞或模型版本漂移、成本失控、低品質內容與審核塞車。</li>
+      <li><b>用階段取捨收尾：</b>新創公司不一次做滿；先保護最重要的使用流程，建立 SLO 與量測，再依真實瓶頸擴充。</li>
+    </ol>
+
+    <h3>如何使用過往經驗</h3>
+    <p>可以分享類似產品經驗，但不要給人「整套複製舊系統」的感覺。應先說明當時的背景、限制、決策與結果，再指出 CO8 的客戶、資料、生成工作與成長階段不同，因此會重新驗證假設並調整設計。</p>
+
+    <h3>2026-07-21 補充：AI／CV 作品與公司身分的呈現策略</h3>
+    <p><b>最新情報：</b>Novia 表示 Gary 也有技術背景，會理解技術內容；可以自在分享 AI 相關技術知識。明天 11:00 面試時，重點是把公開作品整理成「技術深度 + 落地能力」的證據，同時明確維持 full-time 求職定位。</p>
+
+    <h4>核心定位</h4>
+    <p class="quote">我是來應徵 full-time 的工程／AI 技術角色，不是來談合作、顧問、外包或商業提案。公司只是我過去接案與累積實戰經驗的載體，不會影響正職投入。</p>
+
+    <h4>AI 技術作品怎麼 present</h4>
+    <p>先用一句話統整：我準備了三個 AI／Computer Vision 相關作品，分別展示應用落地、底層原理，以及傳統影像處理能力。</p>
+    <ol>
+      <li><b>signsight — 交通路標辨識：</b>自行訓練 CNN 辨識 GTSRB 43 類路標，測試準確率約 92.7%；包含 Grad-CAM 可解釋性視覺化，並以 FastAPI 包成推論服務、Docker 化、附 CI 與測試。重點是「AI 模型訓練到服務化上線」。<br><a href="https://github.com/cancleeric/signsight" target="_blank" rel="noopener noreferrer">github.com/cancleeric/signsight ↗</a></li>
+      <li><b>nanograd — 從零手刻 autograd：</b>純 Python 實作自動微分與迷你神經網路，展示不是只會呼叫框架 API，而是理解反向傳播、梯度與神經網路訓練底層原理。<br><a href="https://github.com/cancleeric/nanograd" target="_blank" rel="noopener noreferrer">github.com/cancleeric/nanograd ↗</a></li>
+      <li><b>edgekit — 純 NumPy Canny 邊緣偵測：</b>從零實作 Gaussian blur、Sobel 梯度、非極大抑制、雙閾值與 hysteresis，展示傳統 Computer Vision 基本功。<br><a href="https://github.com/cancleeric/edgekit" target="_blank" rel="noopener noreferrer">github.com/cancleeric/edgekit ↗</a></li>
+    </ol>
+    <p><b>收斂講法：</b>這三個作品合起來，代表我對 AI／CV 不只是會用現成模型，也理解模型訓練、底層原理與影像處理基本技術。實務上如果公司需要把 AI 技術整合到產品或流程裡，我可以較快理解問題、評估模型、做原型並落地。</p>
+
+    <h4>公司仍在營運時的回答</h4>
+    <p>如果 Gary 問「你自己有公司，會不會影響這份工作？」可回答：</p>
+    <p class="quote">不會影響。那主要是我過去接案、代工時使用的公司形式，不是我現在要經營成主要事業的方向。這次我是以 full-time 正職為目標，時間安排會以公司工作為優先，也不會在工作上產生衝突。我也不會把這次面試當成談合作或顧問機會，就是正常求職面試。</p>
+
+    <h4>面試中避免主動提的方向</h4>
+    <ul>
+      <li>不要主動提「可以合作」、「我公司可以承接」、「consultant」、「外包」、「用公司名義」。</li>
+      <li>不要讓對方覺得你是來談 business development，而不是穩定加入團隊。</li>
+      <li>技術可以講深，但不要炫技；先回答產品與公司需要，再依 Gary 的反應展開技術深度。</li>
+    </ul>
+
+    <h4>明天可用開場</h4>
+    <p class="quote">我過去做過一些 AI 和影像處理相關專案，包含模型訓練、底層神經網路原理，以及傳統 Computer Vision。這次我主要是以 full-time 角色來看這個機會，希望把這些技術經驗應用在實際產品或業務需求上。如果 Gary 想了解技術細節，我可以依照他想看的深度，從應用面或底層原理展開說明。</p>
+
+    <h3>需要主動補強的是呈現方式，不是實際經驗</h3>
+    <p>對方可能從目前履歷與公開作品誤判你的經驗偏向 project-by-project。事實上，你自 2001 年起就是產品經理，曾負責 WinCE E550 平台上的多個多媒體系統、主導東岸互動的線上 POP 編輯器，也長期主導 STA 網站。面試時不要承認不存在的能力缺口，而應有條理地補出完整產品時間線：</p>
+    <ul>
+      <li>你不是現在才從專案轉向產品；你自 2001 年起就對產品定義、推出與演進負責。</li>
+      <li>你會持續關注 activation、reliability、retention、成本與客戶回饋，而不只看交付。</li>
+      <li>自家產品沒有客戶提供完整規格，因此要主動做市場研究、訪談、提出假設並用數據驗證。</li>
+    </ul>
+
+    <h3>應展現的工作心態</h3>
+    <ul>
+      <li><b>自主性：</b>沒有完整需求也能把模糊問題變成可驗證的下一步。</li>
+      <li><b>產品熱情：</b>具體說明為何認同 CO8 從生圖走向 creative operations 的方向。</li>
+      <li><b>企業家精神：</b>把穩定性、客戶價值、成本、上市速度與長期護城河一起考慮。</li>
+      <li><b>伙伴心態：</b>表達希望與團隊共同建立長期產品，而不是只完成被分配的任務。</li>
+    </ul>
+
+    <h3>可以反問 Gary</h3>
+    <ol>
+      <li>目前最重要的企業客戶使用情境與最大技術瓶頸是什麼？</li>
+      <li>未來 12 個月，平台最優先的是產品市場契合、穩定性、生成品質、成本，還是企業級治理？</li>
+      <li>Software Architect 對產品決策、客戶訪談與 roadmap 有多少參與空間？</li>
+      <li>團隊如何衡量一次生成及整個 creative workflow 的成功？</li>
+      <li>公司資金規劃、股份條件、歸屬期與長期發展目標為何？</li>
+    </ol>
+  </section></div><div class="pager"><div><a class="btn" href="09-ai-ops.html">← 九、如果題目交到我們手上：從 AI 生圖走向創意營運系統</a></div><div><a class="btn" href="11-ownership.html">十一、25 年產品 ownership 時間線 →</a></div></div></main></div></body></html>
