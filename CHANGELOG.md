@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0] - 2026-07-21
+
+- 新增「八大核心流程怎麼落地」頁面，說明 Create／Test／Learn／Optimize／Refresh／Scale／Repeat／Grow 的實作方式
+- 補充 MVP 做法：一個品牌、一個渠道、一場活動，先跑完整 creative operations loop
+- 補充系統架構：Tenant、Brand Memory、Brief Builder、AI Job Queue、Model Router、Review Workflow、Asset Registry、Learning Dashboard
+- 加入面試可直接使用的八步流程回答版本
+
 ## [1.7.0] - 2026-07-21
 
 - 新增「為什麼我比一般候選人更適合 CO8」補充頁與首頁區塊

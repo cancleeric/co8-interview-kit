@@ -1,0 +1,49 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>八大核心流程怎麼做｜CO8 面試教材</title><link rel="stylesheet" href="site.css"></head><body><div class="layout"><aside class="side"><h1><a href="index.html">CO8 面試教材網站</a></h1><p>v1.8.0｜Implementation Plan</p><nav class="nav"><a href="index.html">章節首頁</a><a href="10-interview.html">面試策略</a><a href="fit.html">為何更適合</a><a href="09-ai-ops.html">AI 營運系統</a><a href="practice.html">英文播放練習</a></nav></aside><main class="main"><div class="hero"><h2>八大核心流程怎麼落地</h2><div class="toolbar"><a class="btn" href="index.html">章節首頁</a><a class="btn" href="../">快讀首頁</a></div></div><div class="content">
+  <section class="warn">
+    <h2>八大核心流程如果由我們來做</h2>
+    <p class="quote">不要先做一個「大量生圖工具」。第一版要做的是一個可量測的 creative operations loop：每一張圖都要知道它來自哪個 brief、哪個假設、哪個模型、誰審核、投到哪裡、結果如何、下一輪怎麼改善。</p>
+  </section>
+  <section>
+    <h2>MVP 做法：一個品牌、一個渠道、一場活動</h2>
+    <ol>
+      <li><b>先選窄場景：</b>一個 D2C 品牌、一個產品、一個渠道，例如 Meta／Instagram 靜態廣告。</li>
+      <li><b>建立 Brand Memory：</b>品牌語氣、色彩、禁用詞、產品賣點、客群、claims、歷史勝出素材。</li>
+      <li><b>建立 Creative Brief：</b>把行銷目標、受眾、hook、優惠、實驗假設、限制條件結構化。</li>
+      <li><b>產生變體：</b>不是亂生圖，而是根據 hook／視覺／文案／CTA 做有目的的實驗矩陣。</li>
+      <li><b>審核與版本化：</b>人工審核品牌一致性、資訊正確性、法規風險、圖片瑕疵；每個版本保留來源紀錄。</li>
+      <li><b>發布與追蹤：</b>每張素材有 asset ID，串 campaign、渠道、成效數據。</li>
+      <li><b>學習記憶：</b>把勝出的 hook、視覺元素、受眾、文案模式回寫，變成下一輪生成依據。</li>
+      <li><b>產品化：</b>把成功流程做成模板，複製到第二個品牌或第二個渠道。</li>
+    </ol>
+  </section>
+  <section>
+    <h2>八步循環拆解</h2>
+    <div class="grid">
+      <div class="card"><strong>1. 創造 Create</strong><p>輸入 structured brief、brand memory、產品素材與實驗假設。產出不是單張圖，而是一組有意義的 creative variants。</p></div>
+      <div class="card"><strong>2. 測試 Test</strong><p>把素材丟到真實小流量測試，或至少先做內部 scoring：品牌一致性、訊息清楚度、差異性、合規風險。</p></div>
+      <div class="card"><strong>3. 學習 Learn</strong><p>收 CTR、CPA、ROAS、採用率、審核退件原因、疲乏時間，把「為什麼贏／為什麼輸」結構化。</p></div>
+      <div class="card"><strong>4. 優化 Optimize</strong><p>不是只改 prompt，而是調整 brief、hook、受眾、版型、CTA、模型路由與審核規則。</p></div>
+      <div class="card"><strong>5. 刷新 Refresh</strong><p>當素材疲乏時，保留勝出訊息，刷新視覺、角度、文案與格式，延長 campaign 壽命。</p></div>
+      <div class="card"><strong>6. 擴張 Scale</strong><p>把勝出模式複製到不同受眾、產品、渠道與品牌；同時加上配額、限流、成本與品質護欄。</p></div>
+      <div class="card"><strong>7. 重複 Repeat</strong><p>把流程模板化：brief template、review checklist、launch checklist、learning dashboard。</p></div>
+      <div class="card"><strong>8. 增長 Grow</strong><p>最後衡量的不是生成數量，而是每週有效學習循環數、找到 winner 的速度、每支勝出素材成本、客戶留存與擴張。</p></div>
+    </div>
+  </section>
+  <section>
+    <h2>系統架構要有的東西</h2>
+    <ul>
+      <li><b>Tenant / Workspace：</b>B2B 多租戶、權限、品牌資料隔離。</li>
+      <li><b>Brand Memory：</b>品牌規範、產品、受眾、禁用詞、歷史 winner。</li>
+      <li><b>Brief Builder：</b>把行銷需求變成結構化資料，不只是自由文字 prompt。</li>
+      <li><b>AI Job Queue：</b>非同步生成、重試、限流、任務狀態、成本估算。</li>
+      <li><b>Model Router：</b>不同模型／供應商 fallback、版本紀錄、品質比較。</li>
+      <li><b>Review Workflow：</b>人工審核、退件原因、品牌一致性與合規檢查。</li>
+      <li><b>Asset Registry：</b>素材 ID、prompt、模型、版本、審核、發布位置與成效。</li>
+      <li><b>Learning Dashboard：</b>把成效數據回寫成下一輪生成依據。</li>
+    </ul>
+  </section>
+  <section class="warn">
+    <h2>面試可講版本</h2>
+    <p class="quote">如果這八步要真的做成產品，我不會先從大量生圖開始。我會先選一個品牌、一個渠道、一場活動，把 brief、生成、審核、發布、成效追蹤和學習回寫完整跑完。第一版的目標不是生最多圖，而是證明每一輪生成都能帶來可量測的 learning。等這個 loop 在一個品牌成立後，再把 Brand Memory、Brief Template、Review Workflow 和 Learning Dashboard 產品化，複製到更多品牌與渠道。</p>
+  </section>
+</div></main></div></body></html>
